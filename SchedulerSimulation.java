@@ -179,7 +179,7 @@ public class SchedulerSimulation {
         // ⚠️ IMPORTANT: Put your student ID here to seed the random number generator
         // This makes your output unique to you - DO NOT forget to change this!
         int studentID = 446050203; // ← CHANGE THIS TO YOUR ACTUAL STUDENT ID
-
+        //this is an updated change to my first commit since it had some issues with the name & the student ID is wrong.
         Random random = new Random(studentID);
 
         // Define the time quantum in milliseconds (the maximum time a process gets in
