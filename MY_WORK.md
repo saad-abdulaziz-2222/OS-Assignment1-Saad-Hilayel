@@ -29,11 +29,11 @@
 
 | Field | Your Answer |
 |-------|-------------|
-| **Full Name** | [Write your full name here] |
-| **Student ID** | [Write your student ID here] |
-| **University Email** | [yourid]@std.psau.edu.sa |
-| **GitHub Username** | [your-github-username] |
-| **Repository Link** | [Paste your repository link here] |
+| **Full Name** | [Saad Abdulaziz Hilayel] |
+| **Student ID** | [446050203] |
+| **University Email** | [446050203@std.psau.edu.sa |
+| **GitHub Username** | [saad-abdulaziz-2222 |
+| **Repository Link** | [https://github.com/saad-abdulaziz-2222/OS-Assignment1-Saad-Hilayel] |
  
 ---
 
@@ -128,98 +128,129 @@
 ---
 
 ## Your Development Log
+### Note on GitHub commit timestamps
 
-### Entry 1 - [Date and Time]
-**What I did**:
+In this assignment I noticed that some of my commits were shown as being made at the same time or grouped under the same date on GitHub even when I worked on the features separately. I used Visual Studio Code to control my commit to Git and sync my local repo to GitHub . I also had a sync problem where I needed to pull . I don’t know if it’s something in my git workflow that caused the timestamps to appear, so I don’t want to assume it’s that without verifying. The GitHub history shows the commits as displayed by the platform, whereas my development log aims to describe the work I actually did.
 
-**Details**:
+### Entry 1 - October 6, 2026, [Around 8:40 p.m.
 
-**Challenges**:
+What I did: 1. Created my assignment repo and started working on the java project.
 
-**Solution**:
+Details:
 
-**Time spent**:
+I forked the starter repository provided and used the repository name required, which is OS-Assignment1-Saad-Hilayel.
+- reviewed repository files and assignment instructions
+The studentID setting in SchedulerSimulation.java.
+
+Challenges: I had to understand the starter project and what parts needed to be changed for the assignment.
+
+Solution: I reviewed the project structure and followed the assignment instructions to locate the changes needed.
+
+Time spent: around 50 minutes]
+---
+
+### Entry 2 - October 7, 2026 [11am]
+
+What I did Feature 1: Process Priority
+
+Details:
+
+Added priority field to the simulated Process class.
+Set a random priority between 1 and 10 with 10 being the highest priority.
+Added a getter for priority.
+Show the priority when a process enters the ready queue.
+Maintained original FIFO queue order.
+Feature 1: Monitor process priority in ready queue. Feature committed with message
+
+Challenges: I needed to inject priority information without disrupting the original scheduling order.
+
+Solution: I added the priority as extra information, and left the FIFO queue implementation as it was.
+
+Time spent: [1 to 1:30 hours.]
+---
+
+### October 7, 2026, [3:40]
+
+What I did is implement Feature 2: Context Switch Counter.
+
+Details:
+
+Define a static counter in the SchedulerSimulation class.
+Each time the scheduler started a process thread , the counter was incremented .
+Added an output statement to print the total counter at the end of the simulation
+Added the feature with the commit message: "Feature 2: Add context switch tracking".
+
+Challenges: I had to put the counter increment in the scheduler loop, and ensure that it was declared in the correct scope.
+
+Solution: I declared counter outside main() and incremented it in the scheduling loop before currentThread.start()
+
+Time spent: [2-3 hours.]
+---
+### Entry 4 October 8, 2026 [4:25PM]
+
+**What I Did:** I implemented Feature 3 on SchedulerSimulation.java and synced my local repo with github.
+
+Details:
+
+* Developed and implemented Feature 3.
+* Synced my repository to GitHub using Visual Studio Code.
+Saw a prompt to pull changes and saw `SchedulerSimulation.java` in Merge Changes.
+- Reviewed the merge conflict to see how I can keep my implementation
+
+**Problems:** I had to resolve a merge conflict in the synchronization process by reconciling my changes with the one in GitHub.
+
+**Solution:** Verified conflict prior to accepting either side to prevent overwriting my implementation of Feature 3.
+
+**Time spent :** 30-45 minutes
 
 ---
 
-### Entry 2 - [Date and Time]
-**What I did**:
+### Entry 5 - October 8, 2026. [5:17PM]
 
-**Details**:
+What I did: Fixed my student ID. Worked on feature #3: Waiting Time Tracking.
 
-**Challenges**:
+Details:
 
-**Solution**:
+Corrected student id in SchedulerSimulation.java from the wrong original to 446050203.
+Committed the fix with message Set my student ID: [446050203]
+Contributed to the waiting-time feature, which tracks waiting time and displays turnaround time.
 
-**Time spent**:
+Challenges: The student ID was wrong initially, so I had to do a separate correction. Also, I had to implement the waiting-time feature without unnecessary modifications to the original scheduler.
 
----
+Solution: I did the student id correction as a separate commit, and the waiting-time feature as a separate change.
 
-### Entry 3 - [Date and Time]
-**What I did**:
-
-**Details**:
-
-**Challenges**:
-
-**Solution**:
-
-**Time spent**:
+time spent : [5 minutes]
 
 ---
 
-### Entry 4 - [Date and Time]
-**What I did**:
 
-**Details**:
+Entry 6 – Oct 9, 2026, [3:30]
 
-**Challenges**:
+What I did: Reviewed the assignment documentation requirements. Prepared my dev log.
 
-**Solution**:
+Details:
 
-**Time spent**:
+Reviewed required sections in MY_WORK.md.
+I looked at the history of my repo vs. the work I had done.
+Started documenting the features, student id fix, and git sync problem.
+Reviewed technical and required reflection questions.
 
----
+Challenges: I had to make sure that the log reflected the actual work sessions and that my answers would be backed up by my actual code and program output.
 
-### Entry 5 - [Date and Time]
-**What I did**:
+I sorted the work by date and feature and identified what details still needed to be verified before submission.
 
-**Details**:
-
-**Challenges**:
-
-**Solution**:
-
-**Time spent**:
-
----
-
-### Entry 6 - [Optional - Date and Time]
-**What I did**:
-
-**Details**:
-
-**Challenges**:
-
-**Solution**:
-
-**Time spent**:
-
+Time Taken: [4 hours]
 ---
 
 ## Development Log Summary
 
-> 💡 **TIP:** Fill this in **last**, after all entries are written.
+> **Total hours on assignment**: [10 hours 10 minutes~]
 
-**Total time spent on assignment**: [X hours]
+Most difficult part: Implementing Feature 3 and dealing with the git sync conflict without losing my changes.
 
-**Most challenging part**:
+**Most interesting learning:** Learning to implement new functionality in Java and how Git synchronization and merge conflicts work in Visual Studio Code.
 
-**Most interesting learning**:
-
-**What I would do differently next time**:
-
----
+**What I would do differently next time**: I would sync my local repo to github more often and check for remote changes before adding new features to reduce the chance of merge conflicts.
 
 # Part B: Reflection (0.5 mark)
 
@@ -237,7 +268,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+Multithreading allows the Java program to perform tasks through different threads. In our case, Process implements the Runnable interface, and Thread process is a new thread that is able to execute the run() method of Process. The method Thread.start() starts a thread while Thread.sleep() causes it to sleep between the progress updates. The method Thread.join() causes the main thread to wait until the thread of the current process completes its time slice. I discovered that the scheduler maintains the simulated processes and Java threads that execute them separately. It is surprising that the scheduler waits for the completion of each thread's time slice before switching to another one.
 
 ## Question 2: What was the most challenging part of this assignment?
 
@@ -245,15 +276,14 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
-
+However, Feature 3, which is waiting time calculation, was the most difficult one for me because of the fact that the timer for waiting needs to be measured each time a process is added to the ready queue. For that reason, I used markReady() to note down the time for this and also used recordWaitingTime() in order to add the time when a process was waiting before execution. Another task for me was ensuring that a process would be able to be added back to the queue without losing its waiting time that was accumulated. In order to do that, I reviewed the last table after simulating the program.
 ## Question 3: How did you overcome the challenges you faced?
 
 > 💡 **TIP:** Describe your method: reading documentation, adding `System.out.println` to debug, re-reading the README, testing after each small change, asking for help.
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+I began by reading the README and looking at the Java code to see how the scheduler worked. Then I worked on the three features and ran the program to see if my changes worked. For Feature 3, I used markReady() and recordWaitingTime() to record the time each process spent waiting in the ready queue. I have checked the final summary to see the turn around time and waiting time of each process. When I hit the Git sync issue, I stopped and looked at the merge conflict rather than just accepting one version or the other. This prevented me from overwriting my changes by accident.
 
 ## Question 4: How can you apply multithreading concepts in real-world applications?
 
@@ -261,7 +291,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+When I write an application that needs to do more than one thing at a time, I can put my knowledge of multithreading to use. For example, a music player can play songs while the user looks at a playlist. A web browser can download content from a website, and still be responsive to user actions. Games can also perform background jobs, while keeping the gameplay responsive. My scheduler helped me understand how processes can be queued, and given time to run. I also learnt how Thread.sleep() and Thread.join() works with execution of a thread. These concepts will help me in understanding how to deal with tasks in future Java projects.
 
 ### Optional: What would you like to learn more about?
 
@@ -293,7 +323,7 @@
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+In this program, Process is an object that represents a process and is not necessarily an operating system process. In addProcessToQueue(), new Thread(process) creates a thread for the Process object which runs the run() function for the Process object. Threads in the same Java application have access to the memory of the program, whereas different operating system processes usually have their own address spaces. It was better to use threads as opposed to creating multiple processes since threads were much easier to make and communicate with, but could still simulate each process object using Runnable.
 
 ## Question 2: Ready Queue Behavior
 
@@ -305,16 +335,34 @@
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+If the process does not complete its time quantum, it is placed at the end of the ready queue, if there are other processes waiting. In my output P5 has burst time 8420 ms and time quantum 4000 ms. It runs for 4000 and then it gets re-queued, it runs for another 4000 ms, it gets re-queued again and finally it runs for its remaining 420 ms. P5 was thus re-queued twice before it was finished. This helps to keep the scheduling fair as the other processes get their turns instead of one process hogging the CPU until it completes.
 
 Example from my output:
 ```
-[Paste a relevant snippet from your program output here showing a process being re-queued]
+P5 executing quantum [4000ms]
+P5 completed quantum 4000ms
+Remaining time: 4420ms
+P5 yields CPU for context switch
+
+P5 added to ready queue | Burst time: 8420ms
+
+...
+
+P5 executing quantum [4000ms]
+P5 completed quantum 4000ms
+Remaining time: 420ms
+P5 yields CPU for context switch
+
+P5 added to ready queue | Burst time: 8420ms
+
+...
+
+P5 executing quantum [420ms]
+P5 finished execution!
 ```
 
 **Explanation of example:**
-[Explain what is happening in the output snippet you pasted.]
-
+The burst time of P5 is 8420ms but the time quantum is only 4000ms. It executes for 4000 ms in its first turn, leaving 4420 ms, and it is put back into the ready queue. On its second turn it runs for another 4000 ms, leaving 420 ms so it gets rescheduled again. Finally P5 runs for the remaining 420ms and finishes. This is to demonstrate what Round-Robin does, in that it allows other processes to take their turn instead of letting P5 have the CPU until it finishes.
 ## Question 3: Thread Lifecycle
 
 **Question**: A thread goes through these states: **New**, **Runnable**, **Running**, **Waiting**, **Terminated**. Walk through these states for one process (e.g., P1) from your simulation. For each state, explain **when** P1 enters it and **which line or method call** triggers the transition (`Thread.start()`, `Thread.join()`, `Thread.sleep()`, etc.).
@@ -323,15 +371,15 @@ Example from my output:
 
 **Your Answer:** *(3-5 sentences overall; one short explanation per state)*
 
-1. **New**: [When is P1 in the New state?]
+1. **New:** When `addProcessToQueue()` creates a P1 thread using `new Thread(process)`, it is in the New state.
 
-2. **Runnable**: [When does P1 become Runnable?]
+2. **Runnable:** P1 will be in the Runnable state when `currentThread.start()` is called by the scheduler.
 
-3. **Running**: [When is P1 Running?]
+3. **Running:** P1 runs its `run()` method, performing CPU work and decrementing its remaining time.
 
-4. **Waiting**: [When and why would a thread be Waiting?]
+4. **Waiting:** The call to `Thread.sleep(stepTime)` puts P1’s thread in the timed-waiting state. The main thread calls `currentThread.join()` to wait for P1 to complete.
 
-5. **Terminated**: [When is P1 Terminated?]
+5. **Terminated**: P1’s thread terminates when its `run()` method has completed its time slice. If P1 still has time remaining, the scheduler will create a new thread for the next round of P1.
 
 ## Question 4: Real-World Applications
 
@@ -341,32 +389,18 @@ Example from my output:
 
 **Your Answer:** *(3-5 sentences per example)*
 
-### Example 1 (operating-system level): [Name of scenario]
+Example 1 (Operating system level): CPU time sharing A very simple operating system can make use of Round-Robin method for distributing CPU time between runnable processes or threads. In this example, each runnable process plays the role of the process in my simulation, and the time quantum is set by the scheduler to indicate the time period during which one process would be allowed to execute before being replaced by another one. If there is an unfinished process, it can come back to the end of the ready queue in order to allow other processes to run. Changing from one process to another one is called a context switch. 
+Example 2: Multiplayer game server The server of the multiplayer game needs to deal with independent jobs, such as performing actions requested by players, game world updating, background data saving, etc. The server can put all such jobs in the ready queue and allocate a certain time slice for each job, like in my simulation. In case there is an unfinished job, it can go back into the queue while the server deals with other jobs. Context switching happens when the operating system moves the CPU from one working thread to another..
 
-**Description**:
-[Describe the real-world scenario.]
 
-**Why Round-Robin works well here**:
-[Fairness, responsiveness, predictability?]
-
-### Example 2: [Name of application/scenario]
-
-**Description**:
-[Describe the real-world scenario or application.]
-
-**Why Round-Robin works well here**:
-[Fairness, responsiveness, predictability?]
 
 ## Summary
+Key concepts I understood through these questions: 
+I found out that Round-Robin scheduling allocates a little bit of CPU time to each process and any processes not finished are placed back into the ready queue. I had a vague idea how java threads work with methods such as start(), sleep(), join() and how state of a thread changes during execution. From context switches and waiting time I learned how to judge the effectiveness of a scheduling algorithm in dealing with processes. 
+Concepts I need to study more:
+I need to get a better understanding of how real operating systems do context switches and schedule threads. I want to practice calculating the waiting time and how different values of time quantum will impact the scheduling performance
 
-**Key concepts I understood through these questions:**
-1.
-2.
-3.
 
-**Concepts I need to study more:**
-1.
-2.
 
 ---
 
